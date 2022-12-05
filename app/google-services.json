@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "528609387483",
+    "project_id": "greenuniv-3846c",
+    "storage_bucket": "greenuniv-3846c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528609387483:android:5009296033a418d7bffdfe",
+        "android_client_info": {
+          "package_name": "com.example.greenuniv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528609387483-bhm1oh50rr4jvr4sm68j9c6vupivedj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69Vb2S4-PkfVjEyNZCwq--IOoVNWMeZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528609387483-bhm1oh50rr4jvr4sm68j9c6vupivedj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

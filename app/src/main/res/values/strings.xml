@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GreenUniv</string>
+    <string-array name="listaUniversidades">
+        <item>Seleccione su Universidad:</item>
+        <item>PUCP</item>
+        <item>UNI</item>
+        <item>U.Lima</item>
+        <item>UNMSM</item>
+        <item>UPC</item>
+    </string-array>
+
 </resources>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_primary"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txtviewGreen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Green"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewUniv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Univ"
+        android:textColor="@color/verdecito"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtviewMsgLoggg"
+        android:layout_width="319dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="App de venta e intercambio"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imgViewLoggg"
+        android:layout_width="163dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imglogin" />
+
+    <ImageView
+        android:id="@+id/imageViewLoggg2"
+        android:layout_width="163dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="296dp"
+
+        android:layout_marginTop="204dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imglogin" />
+
+    <ImageView
+        android:id="@+id/imageViewLoggggg"
+        android:layout_width="163dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="356dp"
+
+        android:layout_marginEnd="296dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imglogin" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFormLoggin"
+        android:layout_width="384dp"
+        android:layout_height="597dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/round_scroll_vista"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_nombresRegistro"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNameRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Nombres"
+                    android:inputType="text"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_ApellidosRegistro"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_nombresRegistro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextApellRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Apellidos"
+                    android:inputType="text"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_EdadRegistro"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_ApellidosRegistro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEdadlRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Edad"
+                    android:inputType="number"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_CorreoRegistro"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_EdadRegistro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCorreoRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_TelefonoRegistro"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_CorreoRegistro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTelefonoRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Teléfono"
+                    android:inputType="number"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinnerUniversidad"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_TelefonoRegistro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/listaUniversidades" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_passwordRegis"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerUniversidad"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_passwordRepeatRegis"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_passwordRegis"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordRepeatRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Confirmar contraseña"
+                    android:inputType="textPassword"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textPregCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSubirCarnet"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="89dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/mclaren"
+                android:onClick="backLogin"
+                android:text="¿Ya tienes una cuenta? Inicia Sesión"
+                android:textColor="#031DC5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textSubirCarnet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_passwordRepeatRegis"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="73dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Subir Carnet Universitario"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonCamCarnet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/text_passwordRepeatRegis"
+                android:layout_marginStart="290dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_img_button"
+                android:backgroundTint="#8EAAD5"
+                android:src="@drawable/ic_camara"></ImageButton>
+
+            <ImageView
+                android:id="@+id/imgCarnetSubido"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/text_passwordRepeatRegis"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="212dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Registrarse"
+        android:textSize="17sp"
+        android:theme="@style/Theme.login"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutFormLoggin"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutFormLoggin"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutFormLoggin" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoLogin"
+        android:layout_width="138dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/greeulogo" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRegister"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ForProgressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
