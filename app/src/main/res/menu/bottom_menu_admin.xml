@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/btn_estudiantes_carnet_gestion"
+        android:icon="@drawable/ic_home"
+        android:title="Alumnos" />
+    <item android:id="@+id/btn_clientesBar_ruta"
+        android:icon="@drawable/ic_location"
+        android:title="Entrega" />
+    <item android:id="@+id/btn_admin_gestion_univ"
+        android:icon="@drawable/ic_add"
+        android:title="Universidades" />
+    <item android:id="@+id/btn_admin_perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil" />
+</menu>

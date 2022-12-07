@@ -267,7 +267,7 @@ public class RegisterActivity extends AppCompatActivity{
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
 
-                    Usuario user = new Usuario(nombre,apellido,edad,correo,telefono,univer,password,rol,fotoPerfilUrl,imgurlCarnet);
+                    Usuario user = new Usuario(nombre,apellido,edad,correo,telefono,univer,password,rol,fotoPerfilUrl,imgurlCarnet,0);
                     firebaseFirestore.collection("estudiantes").document(correo).set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void unused) {

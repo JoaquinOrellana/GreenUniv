@@ -13,6 +13,16 @@ public class Usuario {
     private String imgurlPerf;
     private String imgurlCarnet;
 
+    public int getVerificado() {
+        return verificado;
+    }
+
+    public void setVerificado(int verificado) {
+        this.verificado = verificado;
+    }
+
+    private int verificado;
+
     public String getImgurlCarnet() {
         return imgurlCarnet;
     }
@@ -101,7 +111,7 @@ public class Usuario {
         this.rol = rol;
     }
 
-    public Usuario(String nombre, String apellido, String edad, String correo, String telefono, String universidad, String password, String rol, String imgurlPerf, String imgurlCarnet) {
+    public Usuario(String nombre, String apellido, String edad, String correo, String telefono, String universidad, String password, String rol, String imgurlPerf, String imgurlCarnet, int verificado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -112,5 +122,10 @@ public class Usuario {
         this.rol = rol;
         this.imgurlPerf = imgurlPerf;
         this.imgurlCarnet = imgurlCarnet;
+        this.verificado = verificado;
     }
+    public Usuario(){
+
+    }
+
 }

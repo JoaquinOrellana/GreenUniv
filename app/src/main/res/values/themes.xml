@@ -16,10 +16,10 @@
 
     <style name="Theme.login" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#0B9A47</item>
-        <item name="colorPrimaryVariant">#4CAF50</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="shapeAppearance">@style/mdcTheme</item>
+            <item name="colorPrimary">#0B9A47</item>
+            <item name="colorPrimaryVariant">#4CAF50</item>
+            <item name="colorOnPrimary">@color/white</item>
+            <item name="shapeAppearance">@style/mdcTheme</item>
     </style>
     <style name="Theme.ForProgressBar" parent="Theme.Material3.DayNight">
         <item name="colorAccent">#00B507</item> <!-- Whatever color you want-->
