@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
@@ -15,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -93,9 +95,19 @@ public class LoginActivity extends AppCompatActivity {
                                         }
                                     });
                                 }else{
-                                    startActivity(new Intent(LoginActivity.this, VistaPrincipalEstudiante.class));
-                                    finish();
-                                    Toast.makeText(LoginActivity.this,"Bienvenido Estudiante",Toast.LENGTH_SHORT).show();
+                                    DocumentSnapshot ds =task.getResult().getDocuments().get(0);
+                                    Double verificado=ds.getDouble("verificado");
+                                    Log.d("msjtest",String.valueOf(verificado));
+                                    if(String.valueOf(verificado).equals("1.0")){
+
+                                        startActivity(new Intent(LoginActivity.this, VistaPrincipalEstudiante.class));
+                                        finish();
+                                        Toast.makeText(LoginActivity.this,"Bienvenido Estudiante",Toast.LENGTH_SHORT).show();
+                                    }else{
+                                        Toast.makeText(LoginActivity.this,"El administrador aun no ha validado su cuenta",Toast.LENGTH_SHORT).show();
+                                    }
+
+
                                 }
                             }
                         }

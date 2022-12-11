@@ -2,12 +2,14 @@ package com.example.greenuniv;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -44,7 +46,7 @@ public class VermasdetallesArticuloFragment extends DialogFragment {
         TextView descripcion=view.findViewById(R.id.textViewDescripcion);
         TextView precio=view.findViewById(R.id.textViewPrecioAprox);
         ImageView imgview=view.findViewById(R.id.imageViewArticuloEstud);
-
+        Button btnintercambiar=view.findViewById(R.id.buttonIntercamb);
 
 
         firebaseFirestore=FirebaseFirestore.getInstance();
@@ -63,6 +65,22 @@ public class VermasdetallesArticuloFragment extends DialogFragment {
                 Glide.with(imgview.getContext()).load(imgurlStr).into(imgview);
             }
         });
+
+
+        btnintercambiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getDialog().dismiss();
+
+                SolicitudIntercambiarFragment soliIntercambFragm=new SolicitudIntercambiarFragment();
+                Bundle bunlde = new Bundle();
+                bunlde.putString("id",id);
+                soliIntercambFragm.setArguments(bunlde);
+                AppCompatActivity activity = (AppCompatActivity) getContext();
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayoutEstudiante,soliIntercambFragm).addToBackStack(null).commit();
+            }
+        });
+
 
 
         return view;

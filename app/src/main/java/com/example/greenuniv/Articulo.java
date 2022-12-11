@@ -7,6 +7,17 @@ public class Articulo {
     private String precio;
     private String descripcion;
     private String imgurl;
+    private String solicitudes;
+
+    public String getSolicitudes() {
+        return solicitudes;
+    }
+
+    public void setSolicitudes(String solicitudes) {
+        this.solicitudes = solicitudes;
+    }
+
+
 
     public String getNombre() {
         return nombre;
@@ -64,12 +75,13 @@ public class Articulo {
         return duenio;
     }
 
-    public Articulo(String nombre, String estado, String precio, String descripcion, String imgurl, String tipo, String duenio, String universidad) {
+    public Articulo(String nombre, String estado, String precio, String descripcion, String imgurl, String solicitudes, String tipo, String duenio, String universidad) {
         this.nombre = nombre;
         this.estado = estado;
         this.precio = precio;
         this.descripcion = descripcion;
         this.imgurl = imgurl;
+        this.solicitudes = solicitudes;
         this.tipo = tipo;
         this.duenio = duenio;
         this.universidad = universidad;

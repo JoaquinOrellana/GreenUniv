@@ -34,6 +34,7 @@ public class VistaPrincipalAdmin extends AppCompatActivity {
         setContentView(R.layout.activity_vista_principal_admin);
         BottomNavigationView bottomNavigationViewAdmin = findViewById(R.id.bottomNavigationAdmin);
         loadFragment(fragmentAlumRegis);
+        firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         logout=findViewById(R.id.btnLogOutAdmin);
         logout.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +48,7 @@ public class VistaPrincipalAdmin extends AppCompatActivity {
         TextView txtname=findViewById(R.id.txtviewNombAdmin);
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
         String correoEstudi = currentUser.getEmail();
-        firebaseFirestore.collection("estudiantes").document(correoEstudi).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        firebaseFirestore.collection("admins").document(correoEstudi).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 nameadmin=documentSnapshot.getString("nombre");

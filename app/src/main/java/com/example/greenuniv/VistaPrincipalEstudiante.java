@@ -66,7 +66,7 @@ public class VistaPrincipalEstudiante extends AppCompatActivity {
                     loadFragment(new EstudianteListadoArticulosFragment(universidad));
                     return true;
                 case R.id.btn_my_articles:
-                    //loadFragment(fragmentProfileTI);
+                    loadFragment(new EstudianteListadoMisArticulosFragment(universidad));
                     return true;
                 case R.id.btn_registrar:
                     loadFragment(fragmentAlumRegis);
