@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/btn_listado_articulos"
+        android:icon="@drawable/ic_home"
+        android:title="Artículos" />
+    <item android:id="@+id/btn_my_articles"
+        android:icon="@drawable/ic_myarticles"
+        android:title="Mis Artículos" />
+    <item android:id="@+id/btn_registrar"
+        android:icon="@drawable/ic_add"
+        android:title="Registrar" />
+    <item android:id="@+id/btn_historial"
+        android:icon="@drawable/ic_historial"
+        android:title="Historial" />
+    <item android:id="@+id/btn_perfil_estudiante"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil" />
+</menu>

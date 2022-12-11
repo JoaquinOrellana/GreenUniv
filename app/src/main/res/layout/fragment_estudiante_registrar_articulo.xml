@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundestudiante"
+    tools:context=".EstudianteRegistrarArticulo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        tools:context=".FormDispositivosFragment">
+        <TextView
+            android:id="@+id/txtViewRegistrarArti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mclaren"
+            android:text="Registrar Artículo"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/linearLayoutRegistPrin"
+            android:layout_width="370dp"
+            android:layout_height="700dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/round_scroll_form_registrar"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/txtViewRegistrarArti"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/txtViewRegistrarArti"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewRegistrarArti">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="105dp"
+                    android:text="Foto:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutRegistroArti"
+                    android:layout_width="245dp"
+                    android:layout_height="205dp"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_below="@+id/textFoto"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textFoto">
+
+                    <ImageView
+                        android:id="@+id/imagenRegistroArti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/fondo_perfil"
+                        android:gravity="center">
+                    </ImageView>
+
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/imageButtonCamFotoArti"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_img_button"
+                    android:backgroundTint="#8EAAD5"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayoutRegistroArti"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayoutRegistroArti"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayoutRegistroArti"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayoutRegistroArti"
+                    android:src="@drawable/ic_camara">
+
+                </ImageButton>
+                <TextView
+                    android:id="@+id/textViewNameArti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayoutRegistroArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="180dp"
+                    android:text="Nombre:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/editTextNameArti"
+                    android:layout_width="177dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/textViewNameArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="12"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewEstadoArt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextNameArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="180dp"
+                    android:text="Estado:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewPrecioArti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextNameArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="207dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="-16dp"
+                    android:text="Precio(S/.):"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextEstadoArti"
+                    android:layout_width="177dp"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/textViewEstadoArt"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+
+                    android:ems="12"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/editTextPrecioArti"
+                    android:layout_width="71dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/textViewEstadoArt"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="209dp"
+                    android:layout_marginTop="7dp"
+
+                    android:ems="12"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescripcionArti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextEstadoArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="105dp"
+                    android:text="Caracteristicas:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextDescripArti"
+                    android:layout_width="400dp"
+                    android:layout_height="82dp"
+                    android:layout_below="@+id/textViewDescripcionArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:ems="12"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxIntercamb"
+                    android:layout_width="138dp"
+                    android:layout_height="33dp"
+                    android:layout_below="@+id/editTextDescripArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:checked="false"
+                    android:gravity="right|center"
+                    android:layoutDirection="rtl"
+                    android:text="Intercambio" />
+                <CheckBox
+                    android:id="@+id/checkBoxVentaArti"
+                    android:layout_width="138dp"
+                    android:layout_height="33dp"
+                    android:layout_below="@+id/checkBoxIntercamb"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:checked="false"
+                    android:gravity="right|center"
+                    android:layoutDirection="rtl"
+                    android:text="Venta" />
+
+                <Button
+                    android:id="@+id/btnAddArtiRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextDescripArti"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="201dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="31dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Registrarse"
+                    android:textSize="17sp"
+                    android:theme="@style/Theme.login" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/separadorForm"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutRegistPrin"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutRegistPrin"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutRegistPrin">
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
