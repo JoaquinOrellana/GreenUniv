@@ -10,8 +10,9 @@ public class Solicitud {
     private String articuloIntercambiar;
     private String articuloinicial;
     private String nombreEstud;
+    private String imgurlArtiInter;
 
-    public Solicitud(String nombreSolicitante, String univer, String tipoSoli, String monto, String articuloIntercambiar, String articuloinicial, String nombreEstud) {
+    public Solicitud(String nombreSolicitante, String univer, String tipoSoli, String monto, String articuloIntercambiar, String articuloinicial, String nombreEstud, String imgurlArtiInter) {
         this.nombreSolicitante = nombreSolicitante;
         this.univer = univer;
         this.tipoSoli = tipoSoli;
@@ -19,7 +20,17 @@ public class Solicitud {
         this.articuloIntercambiar = articuloIntercambiar;
         this.articuloinicial = articuloinicial;
         this.nombreEstud = nombreEstud;
+        this.imgurlArtiInter = imgurlArtiInter;
     }
+
+    public String getImgurlArtiInter() {
+        return imgurlArtiInter;
+    }
+
+    public void setImgurlArtiInter(String imgurlArtiInter) {
+        this.imgurlArtiInter = imgurlArtiInter;
+    }
+
     public  Solicitud(){
 
     }

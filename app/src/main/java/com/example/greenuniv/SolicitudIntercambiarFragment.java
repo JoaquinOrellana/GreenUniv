@@ -168,6 +168,7 @@ public class SolicitudIntercambiarFragment extends Fragment {
                                     solicitud.setMonto(precioString);
                                     solicitud.setTipoSoli("Intercambio");
                                     solicitud.setUniver(universidad);
+                                    solicitud.setImgurlArtiInter(imgurlFotoArtiInter);
                                     solicitud.setNombreSolicitante(correoEstudi);
                                     firebaseFirestore.collection("articulos").document(id).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                         @Override
