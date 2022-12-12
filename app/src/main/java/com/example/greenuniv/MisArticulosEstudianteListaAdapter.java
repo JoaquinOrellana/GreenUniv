@@ -82,18 +82,7 @@ public class MisArticulosEstudianteListaAdapter extends FirestoreRecyclerAdapter
 
 
         Glide.with(holder.imageViewMisArticuloEstuda.getContext()).load(articulo.getImgurl()).into(holder.imageViewMisArticuloEstuda);
-        holder.btnVerDetallesSolisa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //send data fragment
-                VermasdetallesArticuloFragment vermasdetallesArticuloFragment=new VermasdetallesArticuloFragment();
-                Bundle bunlde = new Bundle();
-                bunlde.putString("id",id);
-                vermasdetallesArticuloFragment.setArguments(bunlde);
-                AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayoutEstudiante,vermasdetallesArticuloFragment).addToBackStack(null).commit();
-            }
-        });
+
     }
 
 
